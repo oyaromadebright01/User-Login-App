@@ -1,0 +1,13 @@
+.login  {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.login button {
+    background-color: dimgray;
+    color: rgb(5, 49, 114);
+    border-color: ghostwhite;
+}
