@@ -4,11 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
-<body>
+<body class="welcome">
     <h1>Welcome</h1>
     <h3><p>Hello, and welcome to our app!</p></h3>
     <p>Feel free to explore and enjoy your experience.</p>
-    <a href="/logout">Logout</a>
+
+    <div class="features">
+        <div class="feature-card">
+            <h4>Profile</h4>
+            <p>View and edit your profile information</p>
+            <button class="feature-btn">Go to Profile</button>
+        </div>
+        <div class="feature-card">
+            <h4>Dashboard</h4>
+            <p>Access your personal dashboard</p>
+            <button class="feature-btn">Open Dashboard</button>
+        </div>
+        <div class="feature-card">
+            <h4>Settings</h4>
+            <p>Customize your preferences</p>
+            <button class="feature-btn">Manage Settings</button>
+        </div>
+    </div>
+
+    <a href="/logout" class="logout-btn">Logout</a>
 </body>
 </html>
